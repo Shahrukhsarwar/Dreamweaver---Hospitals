@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Doctor Appointment</title>
+
+  <link rel="stylesheet" href="PT.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- BACK ARROW -->
+<a href="index.html" class="back-arrow">
+  <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<section class="appointment-section">
+
+  <div class="appointment-container">
+
+    <h1>Book Doctor Appointment</h1>
+
+    <p>Select your doctor type and book your appointment easily</p>
+
+    <form onsubmit="showMessage(event)">
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="email" placeholder="Email Address" required>
+
+      <input type="tel" placeholder="Phone Number" required>
+
+      <input type="date" required>
+
+      <!-- DOCTOR SPECIALITY -->
+      <select required>
+        <option value="">Select Doctor Speciality</option>
+
+        <option>General Physician (GP)</option>
+        <option>Gynecologist (Gyno)</option>
+        <option>Pediatrician (Children Doctor)</option>
+        <option>Dentist</option>
+        <option>Dermatologist (Skin Specialist)</option>
+        <option>Cardiologist (Heart Specialist)</option>
+        <option>Neurologist (Brain & Nerves)</option>
+        <option>Orthopedic Surgeon (Bones Specialist)</option>
+        <option>ENT Specialist (Ear, Nose, Throat)</option>
+        <option>Ophthalmologist (Eye Specialist)</option>
+        <option>Psychiatrist (Mental Health Doctor)</option>
+        <option>Surgeon (Operation Specialist)</option>
+        <option>Radiologist (X-ray / Imaging Doctor)</option>
+        <option>Anesthesiologist (Surgery Anesthesia)</option>
+        <option>Urologist (Urinary System Specialist)</option>
+
+      </select>
+
+      <textarea placeholder="Describe your problem / symptoms"></textarea>
+
+      <button type="submit">Submit Appointment</button>
+
+    </form>
+
+    <p id="success-message">Appointment Submitted Successfully ✅</p>
+
+  </div>
+
+</section>
+
+<script>
+function showMessage(event){
+  event.preventDefault();
+  document.getElementById("success-message").style.display = "block";
+}
+</script>
+
+</body>
+</html>

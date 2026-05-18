@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambridge Hospital - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+<div class="top-bar">
+
+    
+    <div class="top-left">
+        <span>Stay safe, stay protected — get vaccinated today.</span>
+    </div>
+
+ 
+
+    <div class="top-right">
+     <a href="./vaccine.html" class="vaccine-btn">Vaccination</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>
+<!-- navbar -->
+
+<div class=" main-navbar">
+    
+   <b> <div class="logo">Cambridge Hospital</div></b>
+ <div class="row">
+   <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="./about-us.html">About Us</a>
+        <a href="./department.html">Departments</a>
+
+        <a href="service.html">Services</a>
+        <a href="./accademic.html">Academics</a>
+        <a href="contact-us.html">Contact</a>
+   </div>
+</div>
+</div>
+<!-- endbar -->
+
+<!-- Navbar -->
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>We Care About Your Health</h1>
+    <p>Have questions or need help? Contact us anytime.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+
+  <!-- Form -->
+  <div class="form-box">
+    <h2>Send Us a Message</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Info -->
+  <div class="info-box">
+    <h2>Contact Information</h2>
+
+    <p><strong>📞 Phone:</strong> +92 300 1234567</p>
+    <p><strong>📧 Email:</strong> info@cambridgehospital.com</p>
+    <p><strong>📍 Address:</strong> Karachi, Pakistan</p>
+    <p><strong>🕒 Hours:</strong> Mon - Sun: 24/7</p>
+  </div>
+
+</section>
+
+<!-- Map -->
+<section class="map">
+  <h2>Our Location</h2>
+  <iframe 
+    src="https://maps.google.com/maps?q=Karachi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    frameborder="0">
+  </iframe>
+</section>
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-box">
+      <h3>About Cambridge Hospital</h3>
+      <p>We provide high quality healthcare services with modern facilities and expert doctors.</p>
+    </div>
+
+    <!-- Departments -->
+    <div class="footer-box">
+      <h3>Departments</h3>
+      <ul>
+        <li>Cardiology</li>
+        <li>Neurology</li>
+        <li>Orthopedics</li>
+        <li>Emergency</li>
+      </ul>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About</a></li>
+        <li><a href="./service.html">Services</a></li>
+        <li><a href="./accademic.html">Academic</a></li>
+        <li><a href="./contact-us.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📍 Karachi, Pakistan</p>
+      <p>📞 +92 300 1234567</p>
+      <p>📧 info@cambridgehospital.com</p>
+
+      <!-- Social Icons -->
+      <div class="social">
+        <span>🔵</span>
+        <span>🔵</span>
+        <span>🔵</span>
+        <span>🔵</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Cambridge Hospital | All Rights Reserved</p>
+  </div>
+
+</footer>
+<button id="scrollTopBtn" onclick="scrollToTop()">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- SCRIPT -->
+<script>
+window.onscroll = function() {
+  let btn = document.getElementById("scrollTopBtn");
+
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+<script src="all.js"></script>
+</body>
+</html>

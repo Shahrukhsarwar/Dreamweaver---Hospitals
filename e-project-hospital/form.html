@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Appointment</title>
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="form.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- BACK ARROW -->
+
+<a href="index.html" class="back-arrow">
+  <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+
+<!-- APPOINTMENT FORM SECTION -->
+
+<section class="appointment-section">
+
+  <div class="appointment-container">
+
+    <h1>Book Vaccination Appointment</h1>
+
+    <p>
+      Fill out the form below to schedule your vaccination appointment.
+    </p>
+
+    <!-- FORM -->
+
+    <form onsubmit="showMessage(event)">
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="email" placeholder="Email Address" required>
+
+      <input type="tel" placeholder="Phone Number" required>
+
+      <input type="date" required>
+
+      <!-- VACCINE OPTIONS -->
+
+      <select required>
+
+        <option value="">Select Vaccine</option>
+
+        <option>Covid-19 Vaccine</option>
+        <option>Flu Vaccine</option>
+        <option>Hepatitis A Vaccine</option>
+        <option>Hepatitis B Vaccine</option>
+        <option>Child Vaccination</option>
+        <option>Polio Vaccine</option>
+        <option>Tetanus Vaccine</option>
+        <option>Rabies Vaccine</option>
+        <option>Chickenpox Vaccine</option>
+        <option>Measles Vaccine</option>
+        <option>HPV Vaccine</option>
+        <option>Typhoid Vaccine</option>
+        <option>Meningitis Vaccine</option>
+        <option>Pneumonia Vaccine</option>
+        <option>Dengue Vaccine</option>
+        <option>BCG (Tuberculosis) Vaccine</option>
+
+      </select>
+
+      <textarea placeholder="Additional Message"></textarea>
+
+      <button type="submit">
+        Submit Appointment
+      </button>
+
+    </form>
+
+    <!-- SUCCESS MESSAGE -->
+
+    <p id="success-message">
+      Appointment Submitted Successfully ✅
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function showMessage(event){
+
+  event.preventDefault();
+
+  document.getElementById("success-message").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
